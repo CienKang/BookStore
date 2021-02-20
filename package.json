@@ -1,0 +1,19 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "A Realtime BookList using Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "First",
+    "Project"
+  ],
+  "author": "Mehak Noor Singh Kang",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^8.2.9",
+    "nodemon": "^2.0.7"
+  }
+}

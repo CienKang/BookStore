@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore | Books Database</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="wrapped-all">
+        <header>
+            <div id="heading">
+                <h1>BookStore</h1>
+                <p>A List that you want.</p>
+                <input type="text" placeholder="Search your Books..." id="Searching">
+                <p class="data-sent">Your Entry has been added successfully.</p>
+            </div>
+        </header>
+        <div id="Database">
+            <div id="Markings">
+                <span id="marking">All Books</span>
+                <span id="marking-1">Completed</span>
+                <span id="marking-2">Currently Reading</span>
+            </div>
+            <ul id="List">
+                <li><span class="Books">Full Metal Alchemist</span><button class="DEL" id="1">DELETE</button></li>
+            </ul>
+            <div id="ending">
+                <input type ="text" id ="AddBook" placeholder ="Enter Name to Add">
+                <button id ="btn">Add</button>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBmCOMnvUeGJHinzfJaJfX0OCxXO1wOfqU",
+    authDomain: "bookstore-web-f5384.firebaseapp.com",
+    projectId: "bookstore-web-f5384",
+    storageBucket: "bookstore-web-f5384.appspot.com",
+    messagingSenderId: "963408876574",
+    appId: "1:963408876574:web:f41dcb7091a1556ead4a0f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <script src ="./Scripts/script.js"></script>
+    <script src ="./Scripts/sorting.js"></script>
+</body>
+
+</html>

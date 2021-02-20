@@ -50,6 +50,14 @@ function addingBooks() {
 
     currentIndex = listings.length;
 
+    let msg = document.getElementById('data-sent');
+    msg.style.display = 'block';
+
+    setTimeout(() => {
+        msg.style.display = 'none';
+    }, 3000);
+    clearTimeout();
+
 }
 
 
@@ -72,6 +80,13 @@ function deL() {
         list.onclick = function () {
             this.parentElement.remove();
             currentIndex = listings.length;
+
+            let msg = document.getElementById('data-del');
+            msg.style.display = 'block';
+
+            setTimeout(() => {
+                msg.style.display = 'none';
+            }, 3000);
         }
     });
 }

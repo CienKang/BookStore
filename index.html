@@ -18,7 +18,8 @@
                 <h1>BookStore</h1>
                 <p>A List that you want.</p>
                 <input type="text" placeholder="Search your Books..." id="Searching">
-                <p class="data-sent">Your Entry has been added successfully.</p>
+                <p id="data-sent">Your Entry has been added successfully.</p>
+                <p id="data-del">Your Entry has been deleted successfully.</p>
             </div>
         </header>
         <div id="Database">
@@ -35,27 +36,6 @@
                 <button id ="btn">Add</button>
             </div>
         </div>
-    </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBmCOMnvUeGJHinzfJaJfX0OCxXO1wOfqU",
-    authDomain: "bookstore-web-f5384.firebaseapp.com",
-    projectId: "bookstore-web-f5384",
-    storageBucket: "bookstore-web-f5384.appspot.com",
-    messagingSenderId: "963408876574",
-    appId: "1:963408876574:web:f41dcb7091a1556ead4a0f"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-
     <script src ="./Scripts/script.js"></script>
     <script src ="./Scripts/sorting.js"></script>
 </body>
